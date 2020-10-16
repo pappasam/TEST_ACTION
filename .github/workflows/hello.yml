@@ -1,0 +1,17 @@
+name: Say Hello
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  hello:
+    name: Hello
+    runs-on: ubuntu-20.04
+
+    steps:
+      - name: Say hello to me
+        uses: pappasam/my-first-action@v1
+        with:
+          who-to-greet: 'JUSTIN'
